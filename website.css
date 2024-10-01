@@ -1,0 +1,218 @@
+.container{
+    border: 1px solid black;
+}
+/* MENU */
+.menuu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+.menucon1,.menucon2,.menucon3,.menucon4{
+    border: 1px solid black;
+}
+.menucon1{
+    width: 16%;
+    display: flex;
+    flex-direction: row;
+}
+.menucon1 h1{
+    font-size: 50px;
+    color: white;
+    margin-left: 5%;
+    font-weight: bold;
+}
+.menu2{
+    width: 84%;
+    display: flex;
+    flex-direction: row;
+}
+.menucon2{
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menucon2 img{
+    width: 45px;
+    height: 40px;
+    margin-right: 3%;
+}
+.menucon2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menucon2:hover{
+    background-color: rgb(123, 0, 255);
+    margin: 10px;
+}
+/* slidershow */
+.carousel{
+    margin-top: 0.5%;
+}
+/* About me */
+.aboutme{
+    border: 1px solid black;
+    margin-top: 0.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3% 5% 3% 7%;
+    background-color: black;
+}
+.aboutme ,.titlee ,.titlee2{
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+}
+/* Hight light project */
+.hightlight{
+    border: 1px solid black;
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: center;
+    padding:1% 3% 0.5% 5%;
+    background-color: black;
+}
+.hightlight{
+    color: white;
+    font-weight: bold;
+    font-size:40px;
+}
+/* card */
+.card-img-top{
+    width: 15px;
+}
+.card-text{
+    font-size: 20px;
+    margin: 3% 2% 5% 7%;
+    color: white;
+}
+.btnw{
+    background-color: rgb(84, 0, 163);
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+/* slider cuoi */
+.slidercuoi{
+    width: 100%;
+    margin-top: 1%;
+}
+/* footer */
+.foter{
+    width: 100%;
+    margin-top: 1%;
+    border: 1px solid black;
+    background-color: black;
+}
+.lienheimg img{
+    width: 100px;
+}
+.titleee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1% 10% 2% 10%;
+    color: white;
+}
+.lienheimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.linklienhe{
+    display: flex;
+    flex-direction: row;
+    padding: 4% 10% 4% 13%;
+}
+.lh2{
+    margin-left: 20%;
+}
+@media screen and (max-width:1024px) {
+    .lienheimg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .it1,.it3{
+        margin-left: 53%;
+        margin-top: 20%;
+    }
+    .it2,.it4{
+        margin-left: 13%;
+        margin-top: 20%;
+    }
+    .linklienhe{
+        display: flex;
+        flex-direction: column;
+    }
+    .lh1,.lh2{
+        font-size: 20px;
+    }
+    .lh2{
+        margin-left: -0px;
+    }
+}
+@media screen and (max-width:430px) {
+    .menuu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu2 {
+        display: none; /* Ẩn menu khi chưa click */
+    }
+    .menu2.active {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+        margin-left: 7%;
+    }
+    .menucon2{
+        width: 100%;
+        margin: 1% 5% 10% 20%;
+    }
+
+    .menucon1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger{
+        width: 10%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: black;
+    }
+    .hamburger p{
+        font-size: 40px;
+        color: white;
+    }
+    .lienheimg{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    .it1,.it3{
+        margin-left: 35%;
+        margin-top: 20%;
+    }
+    .it2,.it4{
+        margin-left: 35%;
+        margin-top: 20%;
+    }
+    .lh2{
+        margin-left: -0px;
+    }
+}
